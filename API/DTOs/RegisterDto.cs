@@ -9,7 +9,7 @@ namespace API.DTOs
         public string Email { get; set; }
 
         [Required]
-        [RegularExpression("(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$", ErrorMessage = "Password must contain at least once digit, at least once lowercase letter, and at least once uppercase letter")]
+        [RegularExpression("(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$", ErrorMessage = "Password must contain at least one digit, at least one lowercase letter, and at least one uppercase letter")]
         public string Password { get; set; }
 
         [Required]
